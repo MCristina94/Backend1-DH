@@ -1,0 +1,26 @@
+[2023-08-04 12:50:13] [ INFO ] [Tigre:13] El tigre de nombre: sherkan Esta corriendo
+[2023-08-04 12:50:46] [ INFO ] [Tigre:13] El tigre de nombre: sherkan Esta corriendo
+[2023-08-04 12:50:46] [ INFO ] [Tigre:20] El tigre sherkan es mayor de 10 años
+[2023-08-04 12:50:58] [ INFO ] [Tigre:13] El tigre de nombre: sherkan Esta corriendo
+[2023-08-04 12:50:58] [ INFO ] [Tigre:23] El tigre sherkan es menor de 10 años
+[2023-08-04 12:51:24] [ INFO ] [Tigre:13] El tigre de nombre: sherkan Esta corriendo
+[2023-08-04 12:51:24] [ INFO ] [Tigre:23] El tigre sherkan es menor de 10 años
+[2023-08-04 12:52:03] [ INFO ] [Tigre:13] El tigre de nombre: sherkan Esta corriendo
+[2023-08-04 12:52:03] [ ERROR] [Tigre:23] La edad no puede ser negativa 
+[2023-08-04 13:53:53] [ ERROR] [Main:21] java.lang.Exception: La edad es negativa
+[2023-08-04 13:53:54] [ INFO ] [Tigre:13] El tigre de nombre: sherkan Esta corriendo
+[2023-08-04 13:54:56] [ ERROR] [Main:21] java.lang.Exception: La edad  de: kan es negativa
+[2023-08-04 13:54:56] [ INFO ] [Tigre:13] El tigre de nombre: sherkan Esta corriendo
+[2023-08-04 13:55:31] [ ERROR] [Main:21] java.lang.Exception: La edad  de: kan es negativa
+[2023-08-04 13:55:31] [ INFO ] [Tigre:13] El tigre de nombre: sherkan Esta corriendo
+[2023-08-04 13:55:31] [ INFO ] [Tigre:20] El tigre sherkan es mayor de 10 años
+[2023-08-04 13:55:31] [ INFO ] [Tigre:20] El tigre she es mayor de 10 años
+[2023-08-04 14:17:56] [ INFO ] [Leon:22] El león de nombre: Rey Esta corriendo
+[2023-08-04 14:17:56] [ INFO ] [Leon:29] El tigre Rey es mayor de 10 años y es alfa
+[2023-08-04 14:18:23] [ INFO ] [Leon:22] El león de nombre: Rey Esta corriendo
+[2023-08-04 14:18:23] [ INFO ] [Leon:29] El Leon Rey es mayor de 10 años y es alfa
+[2023-08-04 14:18:35] [ INFO ] [Leon:22] El león de nombre: Rey Esta corriendo
+[2023-08-04 14:18:35] [ INFO ] [Leon:32] El Leon Rey es mayor de 10 años y no es alfa
+[2023-08-04 14:18:46] [ ERROR] [Main:18] java.lang.Exception: La edad  de: Rey es negativa
+[2023-08-04 14:18:46] [ INFO ] [Leon:22] El león de nombre: Rey Esta corriendo
+[2023-08-04 14:18:46] [ INFO ] [Leon:35] El Leon Rey es menor de 10 años

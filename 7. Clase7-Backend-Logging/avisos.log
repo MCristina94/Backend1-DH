@@ -1,0 +1,17 @@
+[2023-08-03 15:36:32] [ INFO ] [Calculadora:15] se esta calculando el promedio de la lista de numeros, el resultado es: 3.3333333333333335
+[2023-08-03 15:36:54] [ INFO ] [Calculadora:15] se esta calculando el promedio de la lista de numeros, el resultado es: 3.3333333333333335
+[2023-08-03 15:37:06] [ INFO ] [Calculadora:15] se esta calculando el promedio de la lista de numeros, el resultado es: 3.5
+[2023-08-03 15:38:47] [ INFO ] [Calculadora:23] Esta lista tiene menos de 5 elementos, tiene: 3 elementos
+[2023-08-03 15:38:47] [ INFO ] [Calculadora:25] Esta lista tiene mas de 5 elementos
+[2023-08-03 15:38:47] [ INFO ] [Calculadora:27] Esta lista tiene mas de 10 elementos
+[2023-08-03 15:39:24] [ INFO ] [Calculadora:23] Esta lista tiene menos de 5 elementos, tiene: 3 elementos
+[2023-08-03 15:39:24] [ INFO ] [Calculadora:25] Esta lista tiene mas de 5 elementos
+[2023-08-03 15:39:24] [ INFO ] [Calculadora:27] Esta lista tiene mas de 10 elementos
+[2023-08-03 15:39:24] [ INFO ] [Calculadora:23] Esta lista tiene menos de 5 elementos, tiene: 0 elementos
+[2023-08-03 15:39:59] [ INFO ] [Calculadora:23] Esta lista tiene menos de 5 elementos, tiene: 3 elementos
+[2023-08-03 15:39:59] [ INFO ] [Calculadora:25] Esta lista tiene mas de 5 elementos
+[2023-08-03 15:39:59] [ INFO ] [Calculadora:27] Esta lista tiene mas de 10 elementos
+[2023-08-03 15:39:59] [ INFO ] [Calculadora:23] Esta lista tiene menos de 5 elementos, tiene: 0 elementos
+[2023-08-03 15:44:35] [ INFO ] [Calculadora:23] Esta lista tiene menos de 5 elementos, tiene: 0 elementos
+[2023-08-03 16:24:15] [ ERROR] [Main:23] java.lang.Exception: La lista es igual a cero
+[2023-08-03 16:25:17] [ ERROR] [Main:23] java.lang.NullPointerException: Cannot invoke "java.util.List.isEmpty()" because "numeros" is null
