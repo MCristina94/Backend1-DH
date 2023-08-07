@@ -1,0 +1,382 @@
+[2023-08-02 21:32:06] [ ERROR] [Main:14] Se pudrio la momia
+[2023-08-02 21:32:18] [ ERROR] [Main:14] Se pudrio la momia
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: "C:/Users/Tomás/test.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:690)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:165)
+	at org.h2.mvstore.db.Store.<init>(Store.java:142)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at Main.probarBBDD(Main.java:23)
+	at Main.main(Main.java:12)
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Tomás/test.mv.db [2.2.220/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2036)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	... 11 more
+[2023-08-02 21:32:35] [ ERROR] [Main:14] Se pudrio la momia
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: "C:/Users/Tomás/test.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:690)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:165)
+	at org.h2.mvstore.db.Store.<init>(Store.java:142)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at Main.probarBBDD(Main.java:23)
+	at Main.main(Main.java:12)
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Tomás/test.mv.db [2.2.220/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2036)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	... 11 more
+[2023-08-02 21:33:08] [ ERROR] [Main:14] Se pudrio la momia
+org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:522)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.Engine.validateUserAndPassword(Engine.java:393)
+	at org.h2.engine.Engine.createSession(Engine.java:206)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:522)
+	at org.h2.engine.SessionRemote.readException(SessionRemote.java:637)
+	at org.h2.engine.SessionRemote.done(SessionRemote.java:606)
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:163)
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:433)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:325)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at Main.probarBBDD(Main.java:23)
+	at Main.main(Main.java:12)
+[2023-08-02 22:00:15] [ INFO ] [SQL:30] Se creo el animal: Paco
+[2023-08-02 22:00:15] [ INFO ] [SQL:30] Se creo el animal: Paquita
+[2023-08-02 22:00:15] [ INFO ] [SQL:30] Se creo el animal: Snowball
+[2023-08-02 22:00:15] [ INFO ] [SQL:30] Se creo el animal: Dumbo
+[2023-08-02 22:00:15] [ INFO ] [SQL:30] Se creo el animal: Cuello Largo
+[2023-08-02 22:05:42] [ INFO ] [SQL:31] Se creo el animal: Paco
+[2023-08-02 22:05:42] [ INFO ] [SQL:31] Se creo el animal: Paquita
+[2023-08-02 22:05:42] [ INFO ] [SQL:31] Se creo el animal: Snowball
+[2023-08-02 22:05:42] [ INFO ] [SQL:31] Se creo el animal: Dumbo
+[2023-08-02 22:05:42] [ INFO ] [SQL:31] Se creo el animal: Cuello Largo
+[2023-08-02 22:05:53] [ INFO ] [SQL:31] Se creo el animal: Paco
+[2023-08-02 22:05:53] [ INFO ] [SQL:31] Se creo el animal: Paquita
+[2023-08-02 22:05:53] [ INFO ] [SQL:31] Se creo el animal: Snowball
+[2023-08-02 22:05:53] [ INFO ] [SQL:31] Se creo el animal: Dumbo
+[2023-08-02 22:05:53] [ INFO ] [SQL:31] Se creo el animal: Cuello Largo
+[2023-08-02 22:06:37] [ INFO ] [SQL:31] Se creo el animal: Paco
+[2023-08-02 22:06:37] [ INFO ] [SQL:31] Se creo el animal: Paquita
+[2023-08-02 22:06:37] [ INFO ] [SQL:31] Se creo el animal: Snowball
+[2023-08-02 22:06:37] [ INFO ] [SQL:31] Se creo el animal: Dumbo
+[2023-08-02 22:06:37] [ INFO ] [SQL:31] Se creo el animal: Cuello Largo
+[2023-08-02 22:13:17] [ INFO ] [SQL:31] Se creo el animal: Paco
+[2023-08-02 22:13:17] [ INFO ] [SQL:31] Se creo el animal: Paquita
+[2023-08-02 22:13:17] [ INFO ] [SQL:31] Se creo el animal: Snowball
+[2023-08-02 22:13:17] [ INFO ] [SQL:31] Se creo el animal: Dumbo
+[2023-08-02 22:13:17] [ INFO ] [SQL:31] Se creo el animal: Cuello Largo
+[2023-08-02 22:13:17] [ INFO ] [SQL:39]  Indice: 1
+[2023-08-02 22:13:17] [ INFO ] [SQL:40]  Nombre: Paco
+[2023-08-02 22:13:17] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-02 22:13:17] [ INFO ] [SQL:39]  Indice: 2
+[2023-08-02 22:13:17] [ INFO ] [SQL:40]  Nombre: Paquita
+[2023-08-02 22:13:17] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-02 22:13:17] [ INFO ] [SQL:39]  Indice: 3
+[2023-08-02 22:13:17] [ INFO ] [SQL:40]  Nombre: Snowball
+[2023-08-02 22:13:17] [ INFO ] [SQL:41]  Tipo: GATO
+[2023-08-02 22:13:17] [ INFO ] [SQL:39]  Indice: 4
+[2023-08-02 22:13:17] [ INFO ] [SQL:40]  Nombre: Dumbo
+[2023-08-02 22:13:17] [ INFO ] [SQL:41]  Tipo: ELEFANTE
+[2023-08-02 22:13:17] [ INFO ] [SQL:39]  Indice: 5
+[2023-08-02 22:13:17] [ INFO ] [SQL:40]  Nombre: Cuello Largo
+[2023-08-02 22:13:17] [ INFO ] [SQL:41]  Tipo: JIRAFA
+[2023-08-02 22:16:46] [ INFO ] [SQL:31] Se creo el animal: Paco
+[2023-08-02 22:16:46] [ INFO ] [SQL:31] Se creo el animal: Paquita
+[2023-08-02 22:16:46] [ INFO ] [SQL:31] Se creo el animal: Snowball
+[2023-08-02 22:16:46] [ INFO ] [SQL:31] Se creo el animal: Dumbo
+[2023-08-02 22:16:46] [ INFO ] [SQL:31] Se creo el animal: Cuello Largo
+[2023-08-02 22:16:46] [ INFO ] [SQL:39]  Indice: 1
+[2023-08-02 22:16:46] [ INFO ] [SQL:40]  Nombre: Paco
+[2023-08-02 22:16:46] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-02 22:16:46] [ INFO ] [SQL:39]  Indice: 2
+[2023-08-02 22:16:46] [ INFO ] [SQL:40]  Nombre: Paquita
+[2023-08-02 22:16:46] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-02 22:16:46] [ INFO ] [SQL:39]  Indice: 3
+[2023-08-02 22:16:46] [ INFO ] [SQL:40]  Nombre: Snowball
+[2023-08-02 22:16:46] [ INFO ] [SQL:41]  Tipo: GATO
+[2023-08-02 22:16:46] [ INFO ] [SQL:39]  Indice: 4
+[2023-08-02 22:16:46] [ INFO ] [SQL:40]  Nombre: Dumbo
+[2023-08-02 22:16:46] [ INFO ] [SQL:41]  Tipo: ELEFANTE
+[2023-08-02 22:16:46] [ INFO ] [SQL:39]  Indice: 5
+[2023-08-02 22:16:46] [ INFO ] [SQL:40]  Nombre: Cuello Largo
+[2023-08-02 22:16:46] [ INFO ] [SQL:41]  Tipo: JIRAFA
+[2023-08-02 22:16:46] [ INFO ] [SQL:53] Se elinmino el animal: 3
+[2023-08-02 22:16:46] [ INFO ] [SQL:39]  Indice: 1
+[2023-08-02 22:16:46] [ INFO ] [SQL:40]  Nombre: Paco
+[2023-08-02 22:16:46] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-02 22:16:46] [ INFO ] [SQL:39]  Indice: 2
+[2023-08-02 22:16:46] [ INFO ] [SQL:40]  Nombre: Paquita
+[2023-08-02 22:16:46] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-02 22:16:46] [ INFO ] [SQL:39]  Indice: 4
+[2023-08-02 22:16:46] [ INFO ] [SQL:40]  Nombre: Dumbo
+[2023-08-02 22:16:46] [ INFO ] [SQL:41]  Tipo: ELEFANTE
+[2023-08-02 22:16:46] [ INFO ] [SQL:39]  Indice: 5
+[2023-08-02 22:16:46] [ INFO ] [SQL:40]  Nombre: Cuello Largo
+[2023-08-02 22:16:46] [ INFO ] [SQL:41]  Tipo: JIRAFA
+[2023-08-02 22:25:33] [ INFO ] [SQL:31] Se creo el animal: Paco
+[2023-08-02 22:25:33] [ INFO ] [SQL:31] Se creo el animal: Paquita
+[2023-08-02 22:25:33] [ INFO ] [SQL:31] Se creo el animal: Snowball
+[2023-08-02 22:25:33] [ INFO ] [SQL:31] Se creo el animal: Dumbo
+[2023-08-02 22:25:33] [ INFO ] [SQL:31] Se creo el animal: Cuello Largo
+[2023-08-02 22:25:33] [ INFO ] [SQL:39]  Indice: 1
+[2023-08-02 22:25:33] [ INFO ] [SQL:40]  Nombre: Paco
+[2023-08-02 22:25:33] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-02 22:25:33] [ INFO ] [SQL:39]  Indice: 2
+[2023-08-02 22:25:33] [ INFO ] [SQL:40]  Nombre: Paquita
+[2023-08-02 22:25:33] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-02 22:25:33] [ INFO ] [SQL:39]  Indice: 3
+[2023-08-02 22:25:33] [ INFO ] [SQL:40]  Nombre: Snowball
+[2023-08-02 22:25:33] [ INFO ] [SQL:41]  Tipo: GATO
+[2023-08-02 22:25:33] [ INFO ] [SQL:39]  Indice: 4
+[2023-08-02 22:25:33] [ INFO ] [SQL:40]  Nombre: Dumbo
+[2023-08-02 22:25:33] [ INFO ] [SQL:41]  Tipo: ELEFANTE
+[2023-08-02 22:25:33] [ INFO ] [SQL:39]  Indice: 5
+[2023-08-02 22:25:33] [ INFO ] [SQL:40]  Nombre: Cuello Largo
+[2023-08-02 22:25:33] [ INFO ] [SQL:41]  Tipo: JIRAFA
+[2023-08-02 22:25:33] [ INFO ] [SQL:53] Se elinmino el animal: 3
+[2023-08-02 22:25:33] [ INFO ] [SQL:39]  Indice: 1
+[2023-08-02 22:25:33] [ INFO ] [SQL:40]  Nombre: Paco
+[2023-08-02 22:25:33] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-02 22:25:33] [ INFO ] [SQL:39]  Indice: 2
+[2023-08-02 22:25:33] [ INFO ] [SQL:40]  Nombre: Paquita
+[2023-08-02 22:25:33] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-02 22:25:33] [ INFO ] [SQL:39]  Indice: 4
+[2023-08-02 22:25:33] [ INFO ] [SQL:40]  Nombre: Dumbo
+[2023-08-02 22:25:33] [ INFO ] [SQL:41]  Tipo: ELEFANTE
+[2023-08-02 22:25:33] [ INFO ] [SQL:39]  Indice: 5
+[2023-08-02 22:25:33] [ INFO ] [SQL:40]  Nombre: Cuello Largo
+[2023-08-02 22:25:33] [ INFO ] [SQL:41]  Tipo: JIRAFA
+[2023-08-02 22:25:33] [ INFO ] [SQL:64] Se actualizo el animal:  PERRO
+[2023-08-02 22:25:33] [ INFO ] [SQL:39]  Indice: 1
+[2023-08-02 22:25:33] [ INFO ] [SQL:40]  Nombre:  PERRO
+[2023-08-02 22:25:33] [ INFO ] [SQL:41]  Tipo: Mi nuevo Perro
+[2023-08-02 22:25:33] [ INFO ] [SQL:39]  Indice: 2
+[2023-08-02 22:25:33] [ INFO ] [SQL:40]  Nombre: Paquita
+[2023-08-02 22:25:33] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-02 22:25:33] [ INFO ] [SQL:39]  Indice: 4
+[2023-08-02 22:25:33] [ INFO ] [SQL:40]  Nombre: Dumbo
+[2023-08-02 22:25:33] [ INFO ] [SQL:41]  Tipo: ELEFANTE
+[2023-08-02 22:25:33] [ INFO ] [SQL:39]  Indice: 5
+[2023-08-02 22:25:33] [ INFO ] [SQL:40]  Nombre: Cuello Largo
+[2023-08-02 22:25:33] [ INFO ] [SQL:41]  Tipo: JIRAFA
+[2023-08-02 22:26:01] [ INFO ] [SQL:31] Se creo el animal: Paco
+[2023-08-02 22:26:01] [ INFO ] [SQL:31] Se creo el animal: Paquita
+[2023-08-02 22:26:01] [ INFO ] [SQL:31] Se creo el animal: Snowball
+[2023-08-02 22:26:01] [ INFO ] [SQL:31] Se creo el animal: Dumbo
+[2023-08-02 22:26:01] [ INFO ] [SQL:31] Se creo el animal: Cuello Largo
+[2023-08-02 22:26:01] [ INFO ] [SQL:39]  Indice: 1
+[2023-08-02 22:26:01] [ INFO ] [SQL:40]  Nombre: Paco
+[2023-08-02 22:26:01] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-02 22:26:01] [ INFO ] [SQL:39]  Indice: 2
+[2023-08-02 22:26:01] [ INFO ] [SQL:40]  Nombre: Paquita
+[2023-08-02 22:26:01] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-02 22:26:01] [ INFO ] [SQL:39]  Indice: 3
+[2023-08-02 22:26:01] [ INFO ] [SQL:40]  Nombre: Snowball
+[2023-08-02 22:26:01] [ INFO ] [SQL:41]  Tipo: GATO
+[2023-08-02 22:26:01] [ INFO ] [SQL:39]  Indice: 4
+[2023-08-02 22:26:01] [ INFO ] [SQL:40]  Nombre: Dumbo
+[2023-08-02 22:26:01] [ INFO ] [SQL:41]  Tipo: ELEFANTE
+[2023-08-02 22:26:01] [ INFO ] [SQL:39]  Indice: 5
+[2023-08-02 22:26:01] [ INFO ] [SQL:40]  Nombre: Cuello Largo
+[2023-08-02 22:26:01] [ INFO ] [SQL:41]  Tipo: JIRAFA
+[2023-08-02 22:26:01] [ INFO ] [SQL:53] Se elinmino el animal: 3
+[2023-08-02 22:26:01] [ INFO ] [SQL:39]  Indice: 1
+[2023-08-02 22:26:01] [ INFO ] [SQL:40]  Nombre: Paco
+[2023-08-02 22:26:01] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-02 22:26:01] [ INFO ] [SQL:39]  Indice: 2
+[2023-08-02 22:26:01] [ INFO ] [SQL:40]  Nombre: Paquita
+[2023-08-02 22:26:01] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-02 22:26:01] [ INFO ] [SQL:39]  Indice: 4
+[2023-08-02 22:26:01] [ INFO ] [SQL:40]  Nombre: Dumbo
+[2023-08-02 22:26:01] [ INFO ] [SQL:41]  Tipo: ELEFANTE
+[2023-08-02 22:26:01] [ INFO ] [SQL:39]  Indice: 5
+[2023-08-02 22:26:01] [ INFO ] [SQL:40]  Nombre: Cuello Largo
+[2023-08-02 22:26:01] [ INFO ] [SQL:41]  Tipo: JIRAFA
+[2023-08-02 22:26:01] [ INFO ] [SQL:64] Se actualizo el animal:  Paco 2.0
+[2023-08-02 22:26:01] [ INFO ] [SQL:39]  Indice: 1
+[2023-08-02 22:26:01] [ INFO ] [SQL:40]  Nombre:  Paco 2.0
+[2023-08-02 22:26:01] [ INFO ] [SQL:41]  Tipo: PERRAZO
+[2023-08-02 22:26:01] [ INFO ] [SQL:39]  Indice: 2
+[2023-08-02 22:26:01] [ INFO ] [SQL:40]  Nombre: Paquita
+[2023-08-02 22:26:01] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-02 22:26:01] [ INFO ] [SQL:39]  Indice: 4
+[2023-08-02 22:26:01] [ INFO ] [SQL:40]  Nombre: Dumbo
+[2023-08-02 22:26:01] [ INFO ] [SQL:41]  Tipo: ELEFANTE
+[2023-08-02 22:26:01] [ INFO ] [SQL:39]  Indice: 5
+[2023-08-02 22:26:01] [ INFO ] [SQL:40]  Nombre: Cuello Largo
+[2023-08-02 22:26:01] [ INFO ] [SQL:41]  Tipo: JIRAFA
+[2023-08-04 16:07:20] [ INFO ] [SQL:31] Se creo el animal: Paco
+[2023-08-04 16:07:20] [ INFO ] [SQL:31] Se creo el animal: Paquita
+[2023-08-04 16:07:20] [ INFO ] [SQL:31] Se creo el animal: Snowball
+[2023-08-04 16:07:20] [ INFO ] [SQL:31] Se creo el animal: Dumbo
+[2023-08-04 16:07:20] [ INFO ] [SQL:31] Se creo el animal: Cuello Largo
+[2023-08-04 16:07:20] [ INFO ] [SQL:39]  Indice: 1
+[2023-08-04 16:07:20] [ INFO ] [SQL:40]  Nombre: Paco
+[2023-08-04 16:07:20] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-04 16:07:20] [ INFO ] [SQL:39]  Indice: 2
+[2023-08-04 16:07:20] [ INFO ] [SQL:40]  Nombre: Paquita
+[2023-08-04 16:07:20] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-04 16:07:20] [ INFO ] [SQL:39]  Indice: 3
+[2023-08-04 16:07:20] [ INFO ] [SQL:40]  Nombre: Snowball
+[2023-08-04 16:07:20] [ INFO ] [SQL:41]  Tipo: GATO
+[2023-08-04 16:07:20] [ INFO ] [SQL:39]  Indice: 4
+[2023-08-04 16:07:20] [ INFO ] [SQL:40]  Nombre: Dumbo
+[2023-08-04 16:07:20] [ INFO ] [SQL:41]  Tipo: ELEFANTE
+[2023-08-04 16:07:20] [ INFO ] [SQL:39]  Indice: 5
+[2023-08-04 16:07:20] [ INFO ] [SQL:40]  Nombre: Cuello Largo
+[2023-08-04 16:07:20] [ INFO ] [SQL:41]  Tipo: JIRAFA
+[2023-08-04 16:07:20] [ INFO ] [SQL:53] Se elinmino el animal: 3
+[2023-08-04 16:07:20] [ INFO ] [SQL:39]  Indice: 1
+[2023-08-04 16:07:20] [ INFO ] [SQL:40]  Nombre: Paco
+[2023-08-04 16:07:20] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-04 16:07:20] [ INFO ] [SQL:39]  Indice: 2
+[2023-08-04 16:07:20] [ INFO ] [SQL:40]  Nombre: Paquita
+[2023-08-04 16:07:20] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-04 16:07:20] [ INFO ] [SQL:39]  Indice: 4
+[2023-08-04 16:07:20] [ INFO ] [SQL:40]  Nombre: Dumbo
+[2023-08-04 16:07:20] [ INFO ] [SQL:41]  Tipo: ELEFANTE
+[2023-08-04 16:07:20] [ INFO ] [SQL:39]  Indice: 5
+[2023-08-04 16:07:20] [ INFO ] [SQL:40]  Nombre: Cuello Largo
+[2023-08-04 16:07:20] [ INFO ] [SQL:41]  Tipo: JIRAFA
+[2023-08-04 16:07:20] [ INFO ] [SQL:64] Se actualizo el animal:  Paco 2.0
+[2023-08-04 16:07:20] [ INFO ] [SQL:39]  Indice: 1
+[2023-08-04 16:07:20] [ INFO ] [SQL:40]  Nombre:  Paco 2.0
+[2023-08-04 16:07:20] [ INFO ] [SQL:41]  Tipo: PERRAZO
+[2023-08-04 16:07:20] [ INFO ] [SQL:39]  Indice: 2
+[2023-08-04 16:07:20] [ INFO ] [SQL:40]  Nombre: Paquita
+[2023-08-04 16:07:20] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-04 16:07:20] [ INFO ] [SQL:39]  Indice: 4
+[2023-08-04 16:07:20] [ INFO ] [SQL:40]  Nombre: Dumbo
+[2023-08-04 16:07:20] [ INFO ] [SQL:41]  Tipo: ELEFANTE
+[2023-08-04 16:07:20] [ INFO ] [SQL:39]  Indice: 5
+[2023-08-04 16:07:20] [ INFO ] [SQL:40]  Nombre: Cuello Largo
+[2023-08-04 16:07:20] [ INFO ] [SQL:41]  Tipo: JIRAFA
+[2023-08-04 16:09:49] [ INFO ] [SQL:31] Se creo el animal: Paco
+[2023-08-04 16:09:49] [ INFO ] [SQL:31] Se creo el animal: Paquita
+[2023-08-04 16:09:49] [ INFO ] [SQL:31] Se creo el animal: Snowball
+[2023-08-04 16:09:49] [ INFO ] [SQL:31] Se creo el animal: Dumbo
+[2023-08-04 16:09:49] [ INFO ] [SQL:31] Se creo el animal: Cuello Largo
+[2023-08-04 16:09:49] [ INFO ] [SQL:39]  Indice: 1
+[2023-08-04 16:09:49] [ INFO ] [SQL:40]  Nombre: Paco
+[2023-08-04 16:09:49] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-04 16:09:49] [ INFO ] [SQL:39]  Indice: 2
+[2023-08-04 16:09:49] [ INFO ] [SQL:40]  Nombre: Paquita
+[2023-08-04 16:09:49] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-04 16:09:49] [ INFO ] [SQL:39]  Indice: 3
+[2023-08-04 16:09:49] [ INFO ] [SQL:40]  Nombre: Snowball
+[2023-08-04 16:09:49] [ INFO ] [SQL:41]  Tipo: GATO
+[2023-08-04 16:09:49] [ INFO ] [SQL:39]  Indice: 4
+[2023-08-04 16:09:49] [ INFO ] [SQL:40]  Nombre: Dumbo
+[2023-08-04 16:09:49] [ INFO ] [SQL:41]  Tipo: ELEFANTE
+[2023-08-04 16:09:49] [ INFO ] [SQL:39]  Indice: 5
+[2023-08-04 16:09:49] [ INFO ] [SQL:40]  Nombre: Cuello Largo
+[2023-08-04 16:09:49] [ INFO ] [SQL:41]  Tipo: JIRAFA
+[2023-08-04 16:09:49] [ INFO ] [SQL:53] Se elinmino el animal: 3
+[2023-08-04 16:09:49] [ INFO ] [SQL:39]  Indice: 1
+[2023-08-04 16:09:49] [ INFO ] [SQL:40]  Nombre: Paco
+[2023-08-04 16:09:49] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-04 16:09:49] [ INFO ] [SQL:39]  Indice: 2
+[2023-08-04 16:09:49] [ INFO ] [SQL:40]  Nombre: Paquita
+[2023-08-04 16:09:49] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-04 16:09:49] [ INFO ] [SQL:39]  Indice: 4
+[2023-08-04 16:09:49] [ INFO ] [SQL:40]  Nombre: Dumbo
+[2023-08-04 16:09:49] [ INFO ] [SQL:41]  Tipo: ELEFANTE
+[2023-08-04 16:09:49] [ INFO ] [SQL:39]  Indice: 5
+[2023-08-04 16:09:49] [ INFO ] [SQL:40]  Nombre: Cuello Largo
+[2023-08-04 16:09:49] [ INFO ] [SQL:41]  Tipo: JIRAFA
+[2023-08-04 16:09:49] [ INFO ] [SQL:64] Se actualizo el animal:  Paco 2.0
+[2023-08-04 16:09:49] [ INFO ] [SQL:39]  Indice: 1
+[2023-08-04 16:09:49] [ INFO ] [SQL:40]  Nombre:  Paco 2.0
+[2023-08-04 16:09:49] [ INFO ] [SQL:41]  Tipo: PERRAZO
+[2023-08-04 16:09:49] [ INFO ] [SQL:39]  Indice: 2
+[2023-08-04 16:09:49] [ INFO ] [SQL:40]  Nombre: Paquita
+[2023-08-04 16:09:49] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-04 16:09:49] [ INFO ] [SQL:39]  Indice: 4
+[2023-08-04 16:09:49] [ INFO ] [SQL:40]  Nombre: Dumbo
+[2023-08-04 16:09:49] [ INFO ] [SQL:41]  Tipo: ELEFANTE
+[2023-08-04 16:09:49] [ INFO ] [SQL:39]  Indice: 5
+[2023-08-04 16:09:49] [ INFO ] [SQL:40]  Nombre: Cuello Largo
+[2023-08-04 16:09:49] [ INFO ] [SQL:41]  Tipo: JIRAFA
+[2023-08-04 16:45:02] [ INFO ] [SQL:31] Se creo el animal: Paco
+[2023-08-04 16:45:02] [ INFO ] [SQL:31] Se creo el animal: Paquita
+[2023-08-04 16:45:02] [ INFO ] [SQL:31] Se creo el animal: Snowball
+[2023-08-04 16:45:02] [ INFO ] [SQL:31] Se creo el animal: Dumbo
+[2023-08-04 16:45:02] [ INFO ] [SQL:31] Se creo el animal: Cuello Largo
+[2023-08-04 16:45:02] [ INFO ] [SQL:39]  Indice: 1
+[2023-08-04 16:45:02] [ INFO ] [SQL:40]  Nombre: Paco
+[2023-08-04 16:45:02] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-04 16:45:02] [ INFO ] [SQL:39]  Indice: 2
+[2023-08-04 16:45:02] [ INFO ] [SQL:40]  Nombre: Paquita
+[2023-08-04 16:45:02] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-04 16:45:02] [ INFO ] [SQL:39]  Indice: 3
+[2023-08-04 16:45:02] [ INFO ] [SQL:40]  Nombre: Snowball
+[2023-08-04 16:45:02] [ INFO ] [SQL:41]  Tipo: GATO
+[2023-08-04 16:45:02] [ INFO ] [SQL:39]  Indice: 4
+[2023-08-04 16:45:02] [ INFO ] [SQL:40]  Nombre: Dumbo
+[2023-08-04 16:45:02] [ INFO ] [SQL:41]  Tipo: ELEFANTE
+[2023-08-04 16:45:02] [ INFO ] [SQL:39]  Indice: 5
+[2023-08-04 16:45:02] [ INFO ] [SQL:40]  Nombre: Cuello Largo
+[2023-08-04 16:45:02] [ INFO ] [SQL:41]  Tipo: JIRAFA
+[2023-08-04 16:45:02] [ INFO ] [SQL:53] Se elinmino el animal: 3
+[2023-08-04 16:45:02] [ INFO ] [SQL:39]  Indice: 1
+[2023-08-04 16:45:02] [ INFO ] [SQL:40]  Nombre: Paco
+[2023-08-04 16:45:02] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-04 16:45:02] [ INFO ] [SQL:39]  Indice: 2
+[2023-08-04 16:45:02] [ INFO ] [SQL:40]  Nombre: Paquita
+[2023-08-04 16:45:02] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-04 16:45:02] [ INFO ] [SQL:39]  Indice: 4
+[2023-08-04 16:45:02] [ INFO ] [SQL:40]  Nombre: Dumbo
+[2023-08-04 16:45:02] [ INFO ] [SQL:41]  Tipo: ELEFANTE
+[2023-08-04 16:45:02] [ INFO ] [SQL:39]  Indice: 5
+[2023-08-04 16:45:02] [ INFO ] [SQL:40]  Nombre: Cuello Largo
+[2023-08-04 16:45:02] [ INFO ] [SQL:41]  Tipo: JIRAFA
+[2023-08-04 16:45:02] [ INFO ] [SQL:64] Se actualizo el animal:  Paco 2.0
+[2023-08-04 16:45:02] [ INFO ] [SQL:39]  Indice: 1
+[2023-08-04 16:45:02] [ INFO ] [SQL:40]  Nombre:  Paco 2.0
+[2023-08-04 16:45:02] [ INFO ] [SQL:41]  Tipo: PERRAZO
+[2023-08-04 16:45:02] [ INFO ] [SQL:39]  Indice: 2
+[2023-08-04 16:45:02] [ INFO ] [SQL:40]  Nombre: Paquita
+[2023-08-04 16:45:02] [ INFO ] [SQL:41]  Tipo: PERRO
+[2023-08-04 16:45:02] [ INFO ] [SQL:39]  Indice: 4
+[2023-08-04 16:45:02] [ INFO ] [SQL:40]  Nombre: Dumbo
+[2023-08-04 16:45:02] [ INFO ] [SQL:41]  Tipo: ELEFANTE
+[2023-08-04 16:45:02] [ INFO ] [SQL:39]  Indice: 5
+[2023-08-04 16:45:02] [ INFO ] [SQL:40]  Nombre: Cuello Largo
+[2023-08-04 16:45:02] [ INFO ] [SQL:41]  Tipo: JIRAFA

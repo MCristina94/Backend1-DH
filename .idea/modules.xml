@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/1. Clase1-Backend/1. Clase1-Backend.iml" filepath="$PROJECT_DIR$/1. Clase1-Backend/1. Clase1-Backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/1.1 Clase1-Act-Backend/1.1 Clase1-Act-Backend.iml" filepath="$PROJECT_DIR$/1.1 Clase1-Act-Backend/1.1 Clase1-Act-Backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2. Clase2-Act-Backend-Template/2. Clase2-Act-Backend-Template.iml" filepath="$PROJECT_DIR$/2. Clase2-Act-Backend-Template/2. Clase2-Act-Backend-Template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2.1 Clase2-Template-Backend/2.1 Clase2-Template-Backend.iml" filepath="$PROJECT_DIR$/2.1 Clase2-Template-Backend/2.1 Clase2-Template-Backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3. Clase3-Backend-CadenaResponsabilidad/3. Clase3-Backend-CadenaResponsabilidad.iml" filepath="$PROJECT_DIR$/3. Clase3-Backend-CadenaResponsabilidad/3. Clase3-Backend-CadenaResponsabilidad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3.1 Clase3-CadenaResponsabilidad-Act-Backend/3.1 Clase3-CadenaResponsabilidad-Act-Backend.iml" filepath="$PROJECT_DIR$/3.1 Clase3-CadenaResponsabilidad-Act-Backend/3.1 Clase3-CadenaResponsabilidad-Act-Backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4. Clase4-Backend-Proxy/4. Clase4-Backend-Proxy.iml" filepath="$PROJECT_DIR$/4. Clase4-Backend-Proxy/4. Clase4-Backend-Proxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4.1 Clase4-Proxy-Act-Backend/4.1 Clase4-Proxy-Act-Backend.iml" filepath="$PROJECT_DIR$/4.1 Clase4-Proxy-Act-Backend/4.1 Clase4-Proxy-Act-Backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5. Clase5-Backend-flyweight/5. Clase5-Backend-flyweight.iml" filepath="$PROJECT_DIR$/5. Clase5-Backend-flyweight/5. Clase5-Backend-flyweight.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5.1 Clase5-flyweight-Act-Backend/5.1 Clase5-flyweight-Act-Backend.iml" filepath="$PROJECT_DIR$/5.1 Clase5-flyweight-Act-Backend/5.1 Clase5-flyweight-Act-Backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/6. Clase6-Backend-Facade/6. Clase6-Backend-Facade.iml" filepath="$PROJECT_DIR$/6. Clase6-Backend-Facade/6. Clase6-Backend-Facade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/6.1 Clase6-Facade-Act-Backend/6.1 Clase6-Facade-Act-Backend.iml" filepath="$PROJECT_DIR$/6.1 Clase6-Facade-Act-Backend/6.1 Clase6-Facade-Act-Backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/6.2 Clase6-Facade-Act2-Backend/6.2 Clase6-Facade-Act2-Backend.iml" filepath="$PROJECT_DIR$/6.2 Clase6-Facade-Act2-Backend/6.2 Clase6-Facade-Act2-Backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7. Clase7-Backend-Logging/7. Clase7-Backend-Logging.iml" filepath="$PROJECT_DIR$/7. Clase7-Backend-Logging/7. Clase7-Backend-Logging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7.1 Clase7-Act-Backend/7.1 Clase7-Act-Backend.iml" filepath="$PROJECT_DIR$/7.1 Clase7-Act-Backend/7.1 Clase7-Act-Backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/8. Clase8-Backend-AccesoBD/8. Clase8-Backend-AccesoBD.iml" filepath="$PROJECT_DIR$/8. Clase8-Backend-AccesoBD/8. Clase8-Backend-AccesoBD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Backend1-DH.iml" filepath="$PROJECT_DIR$/.idea/Backend1-DH.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,112 @@
+[2023-08-04 15:26:47] [ ERROR] [Main:10] Algo esta mal 
+java.lang.ClassNotFoundException: org.h2.Driver
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:390)
+	at java.base/java.lang.Class.forName(Class.java:381)
+	at Sql.inicializarConexion(Sql.java:17)
+	at Main.main(Main.java:8)
+[2023-08-04 15:28:49] [ ERROR] [Main:10] Algo esta mal 
+java.lang.ClassNotFoundException: org.h2.Driver
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:390)
+	at java.base/java.lang.Class.forName(Class.java:381)
+	at Sql.inicializarConexion(Sql.java:17)
+	at Main.main(Main.java:8)
+[2023-08-04 17:21:41] [ ERROR] [Main:11] Algo esta mal 
+java.lang.ClassNotFoundException: org.h2.Driver
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:390)
+	at java.base/java.lang.Class.forName(Class.java:381)
+	at Sql.inicializarConexion(Sql.java:16)
+	at Main.main(Main.java:9)
+[2023-08-04 17:29:07] [ ERROR] [Main:11] Algo esta mal 
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE FIGURAS(ID INT PRIMARY KEY, TIPOFIGURA VARCHAR(255), COLOR VARCHAR(255)[*]"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE FIGURAS(ID INT PRIMARY KEY, TIPOFIGURA VARCHAR(255), COLOR VARCHAR(255) [42001-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.getSyntaxError(DbException.java:261)
+	at org.h2.command.Parser.getSyntaxError(Parser.java:910)
+	at org.h2.command.Parser.read(Parser.java:5793)
+	at org.h2.command.Parser.readIfMore(Parser.java:1312)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:9437)
+	at org.h2.command.Parser.parseCreate(Parser.java:6905)
+	at org.h2.command.Parser.parsePrepared(Parser.java:771)
+	at org.h2.command.Parser.parse(Parser.java:697)
+	at org.h2.command.Parser.parse(Parser.java:674)
+	at org.h2.command.Parser.prepareCommand(Parser.java:577)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:634)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:53)
+	at org.h2.command.CommandList.update(CommandList.java:66)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:408)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:191)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.engine.SessionRemote.readException(SessionRemote.java:637)
+	at org.h2.engine.SessionRemote.done(SessionRemote.java:606)
+	at org.h2.command.CommandRemote.executeUpdate(CommandRemote.java:227)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at Sql.inicializarConexion(Sql.java:21)
+	at Main.main(Main.java:9)
+[2023-08-04 17:30:12] [ ERROR] [Main:11] Algo esta mal 
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE FIGURAS(ID INT PRIMARY KEY, TIPOFIGURA VARCHAR(255), COLOR VARCHAR(255)[*];"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE FIGURAS(ID INT PRIMARY KEY, TIPOFIGURA VARCHAR(255), COLOR VARCHAR(255); [42001-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.getSyntaxError(DbException.java:261)
+	at org.h2.command.Parser.getSyntaxError(Parser.java:910)
+	at org.h2.command.Parser.read(Parser.java:5793)
+	at org.h2.command.Parser.readIfMore(Parser.java:1312)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:9437)
+	at org.h2.command.Parser.parseCreate(Parser.java:6905)
+	at org.h2.command.Parser.parsePrepared(Parser.java:771)
+	at org.h2.command.Parser.parse(Parser.java:697)
+	at org.h2.command.Parser.parse(Parser.java:674)
+	at org.h2.command.Parser.prepareCommand(Parser.java:577)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:634)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:53)
+	at org.h2.command.CommandList.update(CommandList.java:66)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:408)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:191)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.engine.SessionRemote.readException(SessionRemote.java:637)
+	at org.h2.engine.SessionRemote.done(SessionRemote.java:606)
+	at org.h2.command.CommandRemote.executeUpdate(CommandRemote.java:227)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at Sql.inicializarConexion(Sql.java:21)
+	at Main.main(Main.java:9)
+[2023-08-04 17:37:55] [ INFO ] [Sql:31] Se creo una figura
+[2023-08-04 17:37:55] [ INFO ] [Sql:31] Se creo una figura
+[2023-08-04 17:37:55] [ INFO ] [Sql:31] Se creo una figura
+[2023-08-04 17:37:55] [ INFO ] [Sql:31] Se creo una figura
+[2023-08-04 17:38:46] [ INFO ] [Sql:31] Se creo una figura
+[2023-08-04 17:38:46] [ INFO ] [Sql:31] Se creo una figura
+[2023-08-04 17:38:46] [ INFO ] [Sql:31] Se creo una figura
+[2023-08-04 17:38:46] [ INFO ] [Sql:31] Se creo una figura
+[2023-08-04 17:38:46] [ INFO ] [Sql:39]  Indice: 1
+[2023-08-04 17:38:46] [ INFO ] [Sql:40]  Tipo de figura: Cuadrado
+[2023-08-04 17:38:46] [ INFO ] [Sql:41]  Color: Rojo
+[2023-08-04 17:38:46] [ INFO ] [Sql:39]  Indice: 2
+[2023-08-04 17:38:46] [ INFO ] [Sql:40]  Tipo de figura: Cuadrado
+[2023-08-04 17:38:46] [ INFO ] [Sql:41]  Color: Amarillo
+[2023-08-04 17:38:46] [ INFO ] [Sql:39]  Indice: 3
+[2023-08-04 17:38:46] [ INFO ] [Sql:40]  Tipo de figura: Circulo
+[2023-08-04 17:38:46] [ INFO ] [Sql:41]  Color: Rojo
+[2023-08-04 17:38:46] [ INFO ] [Sql:39]  Indice: 4
+[2023-08-04 17:38:46] [ INFO ] [Sql:40]  Tipo de figura: Circulo
+[2023-08-04 17:38:46] [ INFO ] [Sql:41]  Color: Azul
