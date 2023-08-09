@@ -1,0 +1,71 @@
+[2023-08-08 10:14:22] [ ERROR] [Main:9] No se estableció la conexión 
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP TABLE [*]IF EXISTIS PACIENTES;CREATE TABLA PACIENTES(ID INT PRIMARY KEY, NOMBRE VARCHAR(255), APELLIDO VARCHAR(255),DOMICILIO VARCHAR(255),DNI INT, FECHAALTA VARCHAR(255), USUARIO VARCHAR(255), PASSWORD VARCHAR(255));"; expected "identifier"; SQL statement:
+DROP TABLE IF EXISTIS PACIENTES;CREATE TABLA PACIENTES(ID INT PRIMARY KEY, NOMBRE VARCHAR(255), APELLIDO VARCHAR(255),DOMICILIO VARCHAR(255),DNI INT, FECHAALTA VARCHAR(255), USUARIO VARCHAR(255), PASSWORD VARCHAR(255)); [42001-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.getSyntaxError(DbException.java:261)
+	at org.h2.command.Parser.readIdentifier(Parser.java:5764)
+	at org.h2.command.Parser.readIdentifierWithSchema(Parser.java:5724)
+	at org.h2.command.Parser.readIdentifierWithSchema(Parser.java:5753)
+	at org.h2.command.Parser.parseDrop(Parser.java:2236)
+	at org.h2.command.Parser.parsePrepared(Parser.java:784)
+	at org.h2.command.Parser.parse(Parser.java:697)
+	at org.h2.command.Parser.parse(Parser.java:669)
+	at org.h2.command.Parser.prepareCommand(Parser.java:577)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:634)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:288)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:191)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.engine.SessionRemote.readException(SessionRemote.java:637)
+	at org.h2.engine.SessionRemote.done(SessionRemote.java:606)
+	at org.h2.command.CommandRemote.prepare(CommandRemote.java:78)
+	at org.h2.command.CommandRemote.<init>(CommandRemote.java:50)
+	at org.h2.engine.SessionRemote.prepareCommand(SessionRemote.java:480)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at SQL.iniciarConexion(SQL.java:22)
+	at Main.main(Main.java:7)
+[2023-08-08 10:16:13] [ ERROR] [Main:9] No se estableció la conexión 
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE [*]TABLA PACIENTES(ID INT PRIMARY KEY, NOMBRE VARCHAR(255), APELLIDO VARCHAR(255),DOMICILIO VARCHAR(255),DNI INT, FECHAALTA VARCHAR(255), USUARIO VARCHAR(255), PASSWORD VARCHAR(255));"; expected "OR REPLACE, FORCE, VIEW, MATERIALIZED, ALIAS, SEQUENCE, USER, TRIGGER, ROLE, SCHEMA, CONSTANT, DOMAIN, TYPE, DATATYPE, AGGREGATE, LINKED, MEMORY, CACHED, LOCAL TEMPORARY, GLOBAL TEMPORARY, TEMP, TEMPORARY, TABLE, SYNONYM, UNIQUE, HASH, SPATIAL, INDEX"; SQL statement:
+CREATE TABLA PACIENTES(ID INT PRIMARY KEY, NOMBRE VARCHAR(255), APELLIDO VARCHAR(255),DOMICILIO VARCHAR(255),DNI INT, FECHAALTA VARCHAR(255), USUARIO VARCHAR(255), PASSWORD VARCHAR(255)); [42001-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.getSyntaxError(DbException.java:261)
+	at org.h2.command.Parser.getSyntaxError(Parser.java:910)
+	at org.h2.command.Parser.read(Parser.java:5785)
+	at org.h2.command.Parser.parseCreate(Parser.java:6934)
+	at org.h2.command.Parser.parsePrepared(Parser.java:771)
+	at org.h2.command.Parser.parse(Parser.java:697)
+	at org.h2.command.Parser.parse(Parser.java:674)
+	at org.h2.command.Parser.prepareCommand(Parser.java:577)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:634)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:53)
+	at org.h2.command.CommandList.update(CommandList.java:66)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:408)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:191)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.engine.SessionRemote.readException(SessionRemote.java:637)
+	at org.h2.engine.SessionRemote.done(SessionRemote.java:606)
+	at org.h2.command.CommandRemote.executeUpdate(CommandRemote.java:227)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at SQL.iniciarConexion(SQL.java:22)
+	at Main.main(Main.java:7)
+[2023-08-08 10:17:23] [ INFO ] [SQL:24] Se creo la tabla pacientes
+[2023-08-08 10:17:29] [ INFO ] [SQL:24] Se creo la tabla pacientes
+[2023-08-08 10:26:30] [ INFO ] [SQL:21] Se creo la tabla pacientes
+[2023-08-08 10:27:29] [ INFO ] [SQL:21] Se creo la tabla pacientes
+[2023-08-08 10:41:08] [ INFO ] [SQL:21] Se creo la tabla pacientes
+[2023-08-08 10:41:08] [ INFO ] [SQL:28] ID 1 Nombre Paciente Manuela Apellido Paciente Ortiz Domicilio Calle23 DNI 123456 Fecha Alta 2021-05-26 USUARIO Manuela123 CONTRASEÑA 101010
+[2023-08-08 10:41:08] [ INFO ] [SQL:28] ID 2 Nombre Paciente Ana Lucia Apellido Paciente Mandela Domicilio Carrera81 DNI 789101112 Fecha Alta 2022-04-30 USUARIO Ana1045 CONTRASEÑA 556655
+[2023-08-08 10:52:05] [ INFO ] [SQL:21] Se creo la tabla pacientes
+[2023-08-08 10:52:05] [ INFO ] [SQL:28] ID 1 Nombre Paciente Manuela Apellido Paciente Ortiz Domicilio Calle23 DNI 123456 Fecha Alta 2021-05-26 USUARIO Manuela123 CONTRASEÑA 101010
+[2023-08-08 10:52:05] [ INFO ] [SQL:28] ID 2 Nombre Paciente Ana Lucia Apellido Paciente Mandela Domicilio Carrera81 DNI 789101112 Fecha Alta 2022-04-30 USUARIO Ana1045 CONTRASEÑA 556655
+[2023-08-08 10:52:05] [ INFO ] [SQL:28] ID 1 Nombre Paciente Manuela Apellido Paciente Ortiz Domicilio Calle23 DNI 123456 Fecha Alta 2021-05-26 USUARIO Manuela123 CONTRASEÑA 101010
+[2023-08-08 10:52:05] [ INFO ] [SQL:28] ID 2 Nombre Paciente Ana Lucia Apellido Paciente Mandela Domicilio Carrera81 DNI 789101112 Fecha Alta 2022-04-30 USUARIO Ana1045 CONTRASEÑA 556655

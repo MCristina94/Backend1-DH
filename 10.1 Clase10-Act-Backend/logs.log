@@ -1,0 +1,55 @@
+[2023-08-08 13:54:51] [ ERROR] [Main:12] No se pudo crear las tablas
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP TABLE [*]IF EXISTIS AVIONES;CREATE TABLE AVIONES (ID INT PRIMARY KEY, MARCA VARCHAR(255), MODELO VARCHAR(255), MATRICULA VARCHAR (255), FECHASERVICIO VARCHAR (255));"; expected "identifier"; SQL statement:
+DROP TABLE IF EXISTIS AVIONES;CREATE TABLE AVIONES (ID INT PRIMARY KEY, MARCA VARCHAR(255), MODELO VARCHAR(255), MATRICULA VARCHAR (255), FECHASERVICIO VARCHAR (255)); [42001-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.getSyntaxError(DbException.java:261)
+	at org.h2.command.Parser.readIdentifier(Parser.java:5764)
+	at org.h2.command.Parser.readIdentifierWithSchema(Parser.java:5724)
+	at org.h2.command.Parser.readIdentifierWithSchema(Parser.java:5753)
+	at org.h2.command.Parser.parseDrop(Parser.java:2236)
+	at org.h2.command.Parser.parsePrepared(Parser.java:784)
+	at org.h2.command.Parser.parse(Parser.java:697)
+	at org.h2.command.Parser.parse(Parser.java:669)
+	at org.h2.command.Parser.prepareCommand(Parser.java:577)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:634)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:288)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:191)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.engine.SessionRemote.readException(SessionRemote.java:637)
+	at org.h2.engine.SessionRemote.done(SessionRemote.java:606)
+	at org.h2.command.CommandRemote.prepare(CommandRemote.java:78)
+	at org.h2.command.CommandRemote.<init>(CommandRemote.java:50)
+	at org.h2.engine.SessionRemote.prepareCommand(SessionRemote.java:480)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at DAOs.Impl.AvionDAOImpl.creatTablas(AvionDAOImpl.java:29)
+	at Main.main(Main.java:10)
+[2023-08-08 14:06:24] [ INFO ] [AvionDAO:90] ID avión: 1 marca: ITT modelo: 2010 matricula: 2010 fecha de servicio: 2022-02-23
+[2023-08-08 14:06:24] [ INFO ] [AvionDAO:90] ID avión: 2 marca: BENDIX modelo: 2015 matricula: 2015 fecha de servicio: 2022-02-23
+[2023-08-08 14:06:24] [ INFO ] [AvionDAO:90] ID avión: 3 marca: I3M modelo: 2022 matricula: 2022 fecha de servicio: 2022-02-23
+[2023-08-08 14:06:24] [ INFO ] [AvionDAO:90] ID avión: 4 marca: ITT modelo: 2011 matricula: 2011 fecha de servicio: 2022-02-23
+[2023-08-08 14:09:04] [ INFO ] [AvionDAO:90] ID avión: 1 marca: ITT modelo: 2010 matricula: 2010 fecha de servicio: 2022-02-23
+[2023-08-08 14:09:04] [ INFO ] [AvionDAO:90] ID avión: 2 marca: BENDIX modelo: 2015 matricula: 2015 fecha de servicio: 2022-02-23
+[2023-08-08 14:09:04] [ INFO ] [AvionDAO:90] ID avión: 3 marca: I3M modelo: 2022 matricula: 2022 fecha de servicio: 2022-02-23
+[2023-08-08 14:09:04] [ INFO ] [AvionDAO:90] ID avión: 4 marca: ITT modelo: 2011 matricula: 2011 fecha de servicio: 2022-02-23
+[2023-08-08 14:09:04] [ INFO ] [AvionDAO:78] Se eliminó el avión con id: 1
+[2023-08-08 14:09:04] [ INFO ] [Main:31] Se esta intento eliminar el avion 1
+[2023-08-08 14:09:04] [ INFO ] [AvionDAO:90] ID avión: 2 marca: BENDIX modelo: 2015 matricula: 2015 fecha de servicio: 2022-02-23
+[2023-08-08 14:09:04] [ INFO ] [AvionDAO:90] ID avión: 3 marca: I3M modelo: 2022 matricula: 2022 fecha de servicio: 2022-02-23
+[2023-08-08 14:09:04] [ INFO ] [AvionDAO:90] ID avión: 4 marca: ITT modelo: 2011 matricula: 2011 fecha de servicio: 2022-02-23
+[2023-08-08 14:10:09] [ INFO ] [AvionDAO:90] ID avión: 1 marca: ITT modelo: 2010 matricula: 2010 fecha de servicio: 2022-02-23
+[2023-08-08 14:10:09] [ INFO ] [AvionDAO:90] ID avión: 2 marca: BENDIX modelo: 2015 matricula: 2015 fecha de servicio: 2022-02-23
+[2023-08-08 14:10:09] [ INFO ] [AvionDAO:90] ID avión: 3 marca: I3M modelo: 2022 matricula: 2022 fecha de servicio: 2022-02-23
+[2023-08-08 14:10:09] [ INFO ] [AvionDAO:90] ID avión: 4 marca: ITT modelo: 2011 matricula: 2011 fecha de servicio: 2022-02-23
+[2023-08-08 15:01:57] [ ERROR] [AvionDAO:66] No fue posible encontrar el avión con id: 3
+[2023-08-08 15:01:57] [ ERROR] [ServicioAvion:36] error
+java.lang.Exception: sucedio un error al buscar el avión
+	at DAOs.Impl.AvionDAOImpl.buscarAvion(AvionDAOImpl.java:67)
+	at Servicios.ServicioAvion.buscarAvion(ServicioAvion.java:34)
+	at Main.main(Main.java:36)
+[2023-08-08 15:01:57] [ INFO ] [Main:37] se encontro el avion: null
+[2023-08-08 15:02:38] [ INFO ] [Main:37] se encontro el avion: Avion{id=3, marca='I3M', modelo='2022', matricula='null', fechaServicio='2022-02-23'}
