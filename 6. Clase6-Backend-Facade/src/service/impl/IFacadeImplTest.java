@@ -23,6 +23,6 @@ class IFacadeImplTest {
 
         descuento = facade.calcularDescuento(producto1, tarjeta2, cantidad2);
 
-        Assertions.assertEquals(10, descuento);
+        Assertions.assertEquals(0, descuento);
     }
 }

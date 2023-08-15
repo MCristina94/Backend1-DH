@@ -1,0 +1,95 @@
+[2023-08-09 19:47:11] [ ERROR] [ServicioOdontologo:27] Hay un error
+java.lang.NullPointerException: Cannot invoke "DAOs.OdontologoDAO.registrarOdontologo(Entidades.Odontologo)" because "this.odontologoDAO" is null
+	at Servicios.ServicioOdontologo.registrarOdontologo(ServicioOdontologo.java:25)
+	at Main.main(Main.java:26)
+[2023-08-09 19:47:11] [ ERROR] [ServicioOdontologo:27] Hay un error
+java.lang.NullPointerException: Cannot invoke "DAOs.OdontologoDAO.registrarOdontologo(Entidades.Odontologo)" because "this.odontologoDAO" is null
+	at Servicios.ServicioOdontologo.registrarOdontologo(ServicioOdontologo.java:25)
+	at Main.main(Main.java:27)
+[2023-08-09 19:47:11] [ ERROR] [ServicioOdontologo:27] Hay un error
+java.lang.NullPointerException: Cannot invoke "DAOs.OdontologoDAO.registrarOdontologo(Entidades.Odontologo)" because "this.odontologoDAO" is null
+	at Servicios.ServicioOdontologo.registrarOdontologo(ServicioOdontologo.java:25)
+	at Main.main(Main.java:28)
+[2023-08-09 19:47:11] [ ERROR] [ServicioOdontologo:27] Hay un error
+java.lang.NullPointerException: Cannot invoke "DAOs.OdontologoDAO.registrarOdontologo(Entidades.Odontologo)" because "this.odontologoDAO" is null
+	at Servicios.ServicioOdontologo.registrarOdontologo(ServicioOdontologo.java:25)
+	at Main.main(Main.java:29)
+[2023-08-09 19:49:59] [ INFO ] [OdontologoDAOImpl:42] Se creo un odontologoEntidades.Odontologo@4e1d422d
+[2023-08-09 19:49:59] [ INFO ] [OdontologoDAOImpl:42] Se creo un odontologoEntidades.Odontologo@5abca1e0
+[2023-08-09 19:49:59] [ INFO ] [OdontologoDAOImpl:42] Se creo un odontologoEntidades.Odontologo@2286778
+[2023-08-09 19:49:59] [ INFO ] [OdontologoDAOImpl:42] Se creo un odontologoEntidades.Odontologo@4e9ba398
+[2023-08-09 19:50:38] [ INFO ] [OdontologoDAOImpl:42] Se creo un odontologoEntidades.Odontologo@4fe3c938
+[2023-08-09 19:50:38] [ INFO ] [OdontologoDAOImpl:42] Se creo un odontologoEntidades.Odontologo@3108bc
+[2023-08-09 19:50:38] [ INFO ] [OdontologoDAOImpl:42] Se creo un odontologoEntidades.Odontologo@370736d9
+[2023-08-09 19:50:38] [ INFO ] [OdontologoDAOImpl:42] Se creo un odontologoEntidades.Odontologo@5f9d02cb
+[2023-08-09 19:50:39] [ INFO ] [OdontologoDAOImpl:56] ID Odontologo 1 Matricula 1010 Nombre Manuela Apellido Ortiz
+[2023-08-09 19:50:39] [ INFO ] [OdontologoDAOImpl:56] ID Odontologo 2 Matricula 1254 Nombre Daniel Apellido Florez
+[2023-08-09 19:50:39] [ INFO ] [OdontologoDAOImpl:56] ID Odontologo 3 Matricula 3654 Nombre Cristian Apellido Lopez
+[2023-08-09 19:50:39] [ INFO ] [OdontologoDAOImpl:56] ID Odontologo 4 Matricula 7889 Nombre Luciano Apellido Menendez
+[2023-08-09 19:55:15] [ INFO ] [OdontologoDAOImpl:42] Se creo un odontologoEntidades.Odontologo@4961f6af
+[2023-08-09 19:55:32] [ INFO ] [OdontologoDAOImpl:42] Se creo un odontologoEntidades.Odontologo@4961f6af
+[2023-08-09 19:55:58] [ INFO ] [OdontologoDAOImpl:42] Se creo un odontologoEntidades.Odontologo@394df057
+[2023-08-09 19:57:03] [ INFO ] [OdontologoDAOImpl:42] Se creo un odontologoEntidades.Odontologo@4961f6af
+[2023-08-09 19:57:03] [ INFO ] [OdontologoDAOImpl:56] ID Odontologo 1 Matricula 1010 Nombre Manuela Apellido Ortiz
+[2023-08-09 19:57:25] [ INFO ] [OdontologoDAOImpl:42] Se creo un odontologoEntidades.Odontologo@4961f6af
+[2023-08-09 19:57:25] [ INFO ] [OdontologoDAOImpl:56] ID Odontologo 1 Matricula 1010 Nombre Manuela Apellido Ortiz
+[2023-08-09 19:57:43] [ INFO ] [OdontologoDAOImpl:42] Se creo un odontologoEntidades.Odontologo@394df057
+[2023-08-09 19:57:43] [ INFO ] [OdontologoDAOImpl:56] ID Odontologo 1 Matricula 1010 Nombre Manuela Apellido Ortiz
+[2023-08-09 20:15:04] [ INFO ] [OdontologoDAOImpl:42] Se creo un odontologoEntidades.Odontologo@7dc0f706
+[2023-08-09 20:15:04] [ INFO ] [OdontologoDAOImpl:56] ID Odontologo 1 Matricula 1010 Nombre Manuela Apellido Ortiz
+[2023-08-09 20:16:18] [ INFO ] [OdontologoDAOImpl:42] Se creo un odontologoEntidades.Odontologo@4961f6af
+[2023-08-09 20:16:18] [ INFO ] [OdontologoDAOImpl:56] ID Odontologo 1 Matricula 1010 Nombre Manuela Apellido Ortiz
+[2023-08-09 20:18:50] [ INFO ] [OdontologoDAOImpl:42] Se creo un odontologoEntidades.Odontologo@4961f6af
+[2023-08-09 20:18:50] [ INFO ] [OdontologoDAOImpl:56] ID Odontologo 1 Matricula 1010 Nombre Manuela Apellido Ortiz
+[2023-08-09 20:19:04] [ INFO ] [OdontologoDAOImpl:42] Se creo un odontologoEntidades.Odontologo@63753b6d
+[2023-08-09 20:19:04] [ INFO ] [OdontologoDAOImpl:42] Se creo un odontologoEntidades.Odontologo@6ddf90b0
+[2023-08-09 20:19:04] [ INFO ] [OdontologoDAOImpl:42] Se creo un odontologoEntidades.Odontologo@57536d79
+[2023-08-09 20:19:04] [ INFO ] [OdontologoDAOImpl:42] Se creo un odontologoEntidades.Odontologo@3b0143d3
+[2023-08-09 20:19:04] [ INFO ] [OdontologoDAOImpl:56] ID Odontologo 1 Matricula 1010 Nombre Manuela Apellido Ortiz
+[2023-08-09 20:19:04] [ INFO ] [OdontologoDAOImpl:56] ID Odontologo 2 Matricula 1254 Nombre Daniel Apellido Florez
+[2023-08-09 20:19:04] [ INFO ] [OdontologoDAOImpl:56] ID Odontologo 3 Matricula 3654 Nombre Cristian Apellido Lopez
+[2023-08-09 20:19:04] [ INFO ] [OdontologoDAOImpl:56] ID Odontologo 4 Matricula 7889 Nombre Luciano Apellido Menendez
+[2023-08-09 20:19:04] [ INFO ] [Main:52] [Entidades.Odontologo@63753b6d, Entidades.Odontologo@6ddf90b0, Entidades.Odontologo@57536d79, Entidades.Odontologo@3b0143d3]
+[2023-08-09 20:19:49] [ INFO ] [Main:52] [Entidades.Odontologo@13a5fe33, Entidades.Odontologo@3108bc, Entidades.Odontologo@370736d9, Entidades.Odontologo@5f9d02cb]
+[2023-08-09 20:25:13] [ INFO ] [Main:55] Lista de odontologos
+[2023-08-09 20:25:13] [ INFO ] [Main:58] 1 1010 Manuela Ortiz
+[2023-08-09 20:25:13] [ INFO ] [Main:58] 2 1254 Daniel Florez
+[2023-08-09 20:25:13] [ INFO ] [Main:58] 3 3654 Cristian Lopez
+[2023-08-09 20:25:13] [ INFO ] [Main:58] 4 7889 Luciano Menendez
+[2023-08-09 20:54:03] [ INFO ] [Main:58] Lista de odontologos
+[2023-08-09 20:54:03] [ INFO ] [Main:61] 1 1010 Manuela Ortiz
+[2023-08-09 20:54:03] [ INFO ] [Main:61] 2 1254 Daniel Florez
+[2023-08-09 20:54:03] [ INFO ] [Main:61] 3 3654 Cristian Lopez
+[2023-08-09 20:54:03] [ INFO ] [Main:61] 4 7889 Luciano Menendez
+[2023-08-09 21:03:07] [ INFO ] [OdontologoDAOImpl:42] Se creo un odontologoEntidades.Odontologo@5aebe890
+[2023-08-09 21:03:07] [ INFO ] [OdontologoDAOImpl:56] ID Odontologo 1 Matricula 1010 Nombre Manuela Apellido Ortiz
+[2023-08-14 13:40:51] [ ERROR] [OdontologoDAOImpl:24] No se pudo crear la conexión DAO
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Connection is broken: "java.net.ConnectException: Connection refused: no further information: localhost" [90067-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:690)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:437)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:325)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at DAOs.Impl.OdontologoDAOImpl.<init>(OdontologoDAOImpl.java:22)
+	at Main.main(Main.java:16)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:535)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:135)
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:99)
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:130)
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:433)
+	... 7 more
+[2023-08-14 13:40:51] [ ERROR] [Main:20] No se pudo crear las tablas
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "DAOs.Impl.OdontologoDAOImpl.connection" is null
+	at DAOs.Impl.OdontologoDAOImpl.creatTablas(OdontologoDAOImpl.java:29)
+	at Main.main(Main.java:18)
+[2023-08-14 13:43:31] [ INFO ] [Main:58] [Odontologo{id=1, matricula=1010, nombre='Manuela', apellido='Ortiz'}, Odontologo{id=2, matricula=1254, nombre='Daniel', apellido='Florez'}, Odontologo{id=3, matricula=3654, nombre='Cristian', apellido='Lopez'}, Odontologo{id=4, matricula=7889, nombre='Luciano', apellido='Menendez'}]
