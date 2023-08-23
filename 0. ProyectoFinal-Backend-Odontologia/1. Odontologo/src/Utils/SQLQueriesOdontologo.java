@@ -11,6 +11,9 @@ public class SQLQueriesOdontologo {
     public static final String TRAER_ODONTOLOGOS =
             "SELECT * FROM ODONTOLOGOS;";
 
+    public static final String TRAER_ODONTOLOGO =
+            "SELECT * FROM ODONTOLOGOS WHERE ID = ?;";
+
     public static final String UPDATE_ODONTOLOGO=
             "UPDATE ODONTOLOGOS SET NOMBRE = ?, APELLIDO = ?, NUMERO_MATRICULA = ? WHERE ID = ?;";
 

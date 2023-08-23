@@ -34,6 +34,7 @@ public class Main {
         Paciente paciente2 = new Paciente(2, "Juan", "Lorenz", "carrera 81", fecha2 );
         Paciente paciente3 = new Paciente(3, "Fabio", "Mendoza", "carrera 52", fecha3 );
         Paciente paciente4 = new Paciente(4, "Enrique", "Manrique", "carrera 01", fecha4 );
+        Paciente pacienteModificar = new Paciente(5, "Lauren", "Madrigal", "carrera 112", fecha1 );
 
         //Registrando pacientes en la tabla
         servicioPaciente.registrarPaciente(paciente1);
@@ -45,12 +46,17 @@ public class Main {
         servicioPaciente.listarPacientes();
 
         //modificando paciente1
-        servicioPaciente.modificarPaciente(1, "Laura", "Gomez", "Calle 28", fecha3);
+        servicioPaciente.modificarPaciente(1, pacienteModificar);
         servicioPaciente.listarPacientes();
 
         //eliminando paciente2
         servicioPaciente.eliminarPaciente(2);
         servicioPaciente.listarPacientes();
+
+        //buscar paciente
+        Paciente paciente5 = new Paciente();
+        paciente5 = servicioPaciente.buscarPaciente(1);
+        LOGGER.info("se encontro el paciente: " + paciente5);
 
     }
 }

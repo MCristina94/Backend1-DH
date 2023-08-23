@@ -62,9 +62,10 @@ class ServicioOdontologoTest {
         ServicioOdontologo servicioOdontologo = new ServicioOdontologo(odontologoDAO);
 
         Odontologo odontolo1 = new Odontologo(1, 1010, "Manuela", "Ortiz");
+        Odontologo odontologoModificar = new Odontologo(5, 1189, "Lucia", "Meneses");
         servicioOdontologo.registrarOdontologo(odontolo1);
 
-        assertEquals(true,servicioOdontologo.modificarOdontologo(1, "Juan", "Gonzalez", 111));
+        assertEquals(true,servicioOdontologo.modificarOdontologo(1, odontologoModificar));
 
     }
 

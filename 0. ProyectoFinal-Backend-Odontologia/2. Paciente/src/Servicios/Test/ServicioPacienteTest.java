@@ -63,8 +63,9 @@ private Logger LOGGER = Logger.getLogger(ServicioPacienteTest.class);
         Date fecha1 = Date.valueOf(fechaPaciente1);
         Paciente paciente1 = new Paciente(1, "Pedro", "Cortez", "carrera 25", fecha1 );
         servicioPaciente.registrarPaciente(paciente1);
+        Paciente pacienteModificar = new Paciente(5, "Lauren", "Madrigal", "carrera 112", fecha1 );
 
-        assertEquals(true, servicioPaciente.modificarPaciente(1, "Lorena", "Monard", "Avenida 58", fecha1));
+        assertEquals(true, servicioPaciente.modificarPaciente(1, pacienteModificar));
 
     }
 

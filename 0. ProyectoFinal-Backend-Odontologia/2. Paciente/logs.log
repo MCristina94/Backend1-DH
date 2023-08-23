@@ -175,3 +175,40 @@ java.lang.Exception: Sucedio un error al crear el paciente
 [2023-08-15 14:54:18] [ INFO ] [PacienteDAOImpl:74] Se moficaron los datos del paciente con id: 1
 [2023-08-15 14:54:50] [ INFO ] [PacienteDAOImpl:45] Se creo un pacientePaciente{id=1, nombre='Pedro', apellido='Cortez', domicilio='carrera 25', fechaAlta=2023-01-02}
 [2023-08-15 14:54:50] [ INFO ] [PacienteDAOImpl:87] Se elimino el paciente con id: 1
+[2023-08-21 14:57:46] [ INFO ] [PacienteDAOImpl:45] Se creo un pacientePaciente{id=1, nombre='Pedro', apellido='Cortez', domicilio='carrera 25', fechaAlta=2023-01-02}
+[2023-08-21 14:57:46] [ INFO ] [PacienteDAOImpl:45] Se creo un pacientePaciente{id=2, nombre='Juan', apellido='Lorenz', domicilio='carrera 81', fechaAlta=2023-06-06}
+[2023-08-21 14:57:46] [ INFO ] [PacienteDAOImpl:45] Se creo un pacientePaciente{id=3, nombre='Fabio', apellido='Mendoza', domicilio='carrera 52', fechaAlta=2023-07-10}
+[2023-08-21 14:57:46] [ INFO ] [PacienteDAOImpl:45] Se creo un pacientePaciente{id=4, nombre='Enrique', apellido='Manrique', domicilio='carrera 01', fechaAlta=2023-08-16}
+[2023-08-21 14:57:46] [ INFO ] [PacienteDAOImpl:58] ID paciente 1 Nombre Pedro Apellido Cortez domicilio carrera 25 fecha de alta 2023-01-02
+[2023-08-21 14:57:46] [ INFO ] [PacienteDAOImpl:58] ID paciente 2 Nombre Juan Apellido Lorenz domicilio carrera 81 fecha de alta 2023-06-06
+[2023-08-21 14:57:46] [ INFO ] [PacienteDAOImpl:58] ID paciente 3 Nombre Fabio Apellido Mendoza domicilio carrera 52 fecha de alta 2023-07-10
+[2023-08-21 14:57:46] [ INFO ] [PacienteDAOImpl:58] ID paciente 4 Nombre Enrique Apellido Manrique domicilio carrera 01 fecha de alta 2023-08-16
+[2023-08-21 14:57:46] [ INFO ] [PacienteDAOImpl:74] Se moficaron los datos del paciente con id: 1
+[2023-08-21 14:57:46] [ INFO ] [PacienteDAOImpl:58] ID paciente 1 Nombre Lauren Apellido Madrigal domicilio carrera 112 fecha de alta 2023-01-02
+[2023-08-21 14:57:46] [ INFO ] [PacienteDAOImpl:58] ID paciente 2 Nombre Juan Apellido Lorenz domicilio carrera 81 fecha de alta 2023-06-06
+[2023-08-21 14:57:46] [ INFO ] [PacienteDAOImpl:58] ID paciente 3 Nombre Fabio Apellido Mendoza domicilio carrera 52 fecha de alta 2023-07-10
+[2023-08-21 14:57:46] [ INFO ] [PacienteDAOImpl:58] ID paciente 4 Nombre Enrique Apellido Manrique domicilio carrera 01 fecha de alta 2023-08-16
+[2023-08-21 14:57:46] [ INFO ] [PacienteDAOImpl:87] Se elimino el paciente con id: 2
+[2023-08-21 14:57:46] [ INFO ] [PacienteDAOImpl:58] ID paciente 1 Nombre Lauren Apellido Madrigal domicilio carrera 112 fecha de alta 2023-01-02
+[2023-08-21 14:57:46] [ INFO ] [PacienteDAOImpl:58] ID paciente 3 Nombre Fabio Apellido Mendoza domicilio carrera 52 fecha de alta 2023-07-10
+[2023-08-21 14:57:46] [ INFO ] [PacienteDAOImpl:58] ID paciente 4 Nombre Enrique Apellido Manrique domicilio carrera 01 fecha de alta 2023-08-16
+[2023-08-21 14:57:58] [ INFO ] [PacienteDAOImpl:45] Se creo un pacientePaciente{id=1, nombre='Pedro', apellido='Cortez', domicilio='carrera 25', fechaAlta=2023-01-02}
+[2023-08-21 14:57:58] [ INFO ] [PacienteDAOImpl:74] Se moficaron los datos del paciente con id: 1
+[2023-08-21 15:04:35] [ INFO ] [PacienteDAOImpl:45] Se creo un pacientePaciente{id=1, nombre='Pedro', apellido='Cortez', domicilio='carrera 25', fechaAlta=2023-01-02}
+[2023-08-21 15:04:35] [ INFO ] [PacienteDAOImpl:45] Se creo un pacientePaciente{id=2, nombre='Juan', apellido='Lorenz', domicilio='carrera 81', fechaAlta=2023-06-06}
+[2023-08-21 15:04:35] [ INFO ] [PacienteDAOImpl:45] Se creo un pacientePaciente{id=3, nombre='Fabio', apellido='Mendoza', domicilio='carrera 52', fechaAlta=2023-07-10}
+[2023-08-21 15:04:35] [ INFO ] [PacienteDAOImpl:45] Se creo un pacientePaciente{id=4, nombre='Enrique', apellido='Manrique', domicilio='carrera 01', fechaAlta=2023-08-16}
+[2023-08-21 15:04:35] [ INFO ] [PacienteDAOImpl:58] ID paciente 1 Nombre Pedro Apellido Cortez domicilio carrera 25 fecha de alta 2023-01-02
+[2023-08-21 15:04:35] [ INFO ] [PacienteDAOImpl:58] ID paciente 2 Nombre Juan Apellido Lorenz domicilio carrera 81 fecha de alta 2023-06-06
+[2023-08-21 15:04:35] [ INFO ] [PacienteDAOImpl:58] ID paciente 3 Nombre Fabio Apellido Mendoza domicilio carrera 52 fecha de alta 2023-07-10
+[2023-08-21 15:04:35] [ INFO ] [PacienteDAOImpl:58] ID paciente 4 Nombre Enrique Apellido Manrique domicilio carrera 01 fecha de alta 2023-08-16
+[2023-08-21 15:04:35] [ INFO ] [PacienteDAOImpl:74] Se moficaron los datos del paciente con id: 1
+[2023-08-21 15:04:35] [ INFO ] [PacienteDAOImpl:58] ID paciente 1 Nombre Lauren Apellido Madrigal domicilio carrera 112 fecha de alta 2023-01-02
+[2023-08-21 15:04:35] [ INFO ] [PacienteDAOImpl:58] ID paciente 2 Nombre Juan Apellido Lorenz domicilio carrera 81 fecha de alta 2023-06-06
+[2023-08-21 15:04:35] [ INFO ] [PacienteDAOImpl:58] ID paciente 3 Nombre Fabio Apellido Mendoza domicilio carrera 52 fecha de alta 2023-07-10
+[2023-08-21 15:04:35] [ INFO ] [PacienteDAOImpl:58] ID paciente 4 Nombre Enrique Apellido Manrique domicilio carrera 01 fecha de alta 2023-08-16
+[2023-08-21 15:04:35] [ INFO ] [PacienteDAOImpl:87] Se elimino el paciente con id: 2
+[2023-08-21 15:04:35] [ INFO ] [PacienteDAOImpl:58] ID paciente 1 Nombre Lauren Apellido Madrigal domicilio carrera 112 fecha de alta 2023-01-02
+[2023-08-21 15:04:35] [ INFO ] [PacienteDAOImpl:58] ID paciente 3 Nombre Fabio Apellido Mendoza domicilio carrera 52 fecha de alta 2023-07-10
+[2023-08-21 15:04:35] [ INFO ] [PacienteDAOImpl:58] ID paciente 4 Nombre Enrique Apellido Manrique domicilio carrera 01 fecha de alta 2023-08-16
+[2023-08-21 15:04:35] [ INFO ] [Main:59] se encontro el paciente: Paciente{id=1, nombre='Lauren', apellido='Madrigal', domicilio='carrera 112', fechaAlta=2023-01-02}

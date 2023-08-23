@@ -65,19 +65,18 @@ public class OdontologoDAOImpl implements OdontologoDAO {
     }
 
     @Override
-    public void modificarOdontologo(int id, String nombreNuevo, String apellidoNuevo, int matriculaNueva ) throws Exception {
+    public void modificarOdontologo(int id, Odontologo odontologo ) throws Exception {
         try(PreparedStatement statement = connection.prepareStatement(SQLQueriesOdontologo.UPDATE_ODONTOLOGO)){
             statement.setInt(4, id);
-            statement.setString(1, nombreNuevo );
-            statement.setString(2, apellidoNuevo);
-            statement.setInt(3, matriculaNueva);
+            statement.setString(1, odontologo.getNombre() );
+            statement.setString(2, odontologo.getApellido());
+            statement.setInt(3, odontologo.getMatricula());
             statement.executeUpdate();
             LOGGER.info("Se moficaron los datos del odontologo con id: " + id);
         }catch (Exception e){
             LOGGER.error("Se presentó error al modificar los datos ", e);
             throw new Exception("Sucedio un error al modificar");
         }
-
     }
 
     @Override
@@ -90,6 +89,29 @@ public class OdontologoDAOImpl implements OdontologoDAO {
         }catch (Exception e){
             LOGGER.error("Se presentó error al eliminar el odontologo", e);
             throw new Exception("Sucedio un error al eliminar");
+        }
+    }
+
+    @Override
+    public Odontologo buscarOdontologo(int id) throws Exception {
+        try(PreparedStatement statement = connection.prepareStatement(SQLQueriesOdontologo.TRAER_ODONTOLOGO)){
+            statement.setInt(1, id);
+            ResultSet resultSet = statement.executeQuery();
+
+            resultSet.last();
+            if(resultSet.getRow()==1){
+                Odontologo odontologo = new Odontologo();
+                odontologo.setId(resultSet.getInt(1));
+                odontologo.setMatricula(resultSet.getInt(2));
+                odontologo.setNombre(resultSet.getString(3));
+                odontologo.setApellido(resultSet.getString(4));
+
+                return odontologo;
+            }else throw new Exception("Error al buscar el odontologo");
+        }catch (Exception e){
+            LOGGER.error("No fue posible encontrar el odontologo con id: "+id);
+            throw new Exception("sucedio un error al buscar el odontologo");
+
         }
     }
 }

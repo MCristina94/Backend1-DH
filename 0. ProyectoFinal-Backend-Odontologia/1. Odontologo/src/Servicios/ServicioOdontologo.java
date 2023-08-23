@@ -41,9 +41,9 @@ public class ServicioOdontologo {
         return "Listado";
     }
 
-    public boolean modificarOdontologo(int id, String nombreNuevo, String apellidoNuevo, int matriculaNueva){
+    public boolean modificarOdontologo(int id, Odontologo odontologo){
         try{
-            odontologoDAO.modificarOdontologo(id, nombreNuevo, apellidoNuevo, matriculaNueva);
+            odontologoDAO.modificarOdontologo(id, odontologo);
         }catch (Exception e){
             LOGGER.error("Hay un error", e);
             return false;
@@ -61,6 +61,15 @@ public class ServicioOdontologo {
         }
         return true;
     }
+    public Odontologo buscarOdontologo(int id){
+        Odontologo odontologo = null;
+        try{
+            odontologo = odontologoDAO.buscarOdontologo(id);
+        }catch (Exception e){
+            LOGGER.error("Hay un error", e);
 
+        }
+        return odontologo;
+    }
 
 }

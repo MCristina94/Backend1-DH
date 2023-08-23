@@ -41,9 +41,9 @@ public class ServicioPaciente {
         return "Listado";
     }
 
-    public boolean modificarPaciente(int id, String nuevoNombre, String nuevoApellido, String nuevoDomicilio, Date nuevaFechaAlta){
+    public boolean modificarPaciente(int id, Paciente paciente){
         try{
-            pacienteDAO.modificarPaciente(id, nuevoNombre, nuevoApellido, nuevoDomicilio, nuevaFechaAlta);
+            pacienteDAO.modificarPaciente(id,paciente);
         }catch (Exception e){
             LOGGER.error("Hay un error", e);
             return false;
@@ -60,5 +60,16 @@ public class ServicioPaciente {
             return false;
         }
         return true;
+    }
+
+    public Paciente buscarPaciente(int id){
+        Paciente paciente = null;
+        try{
+            paciente = pacienteDAO.buscarPaciente(id);
+        }catch (Exception e){
+            LOGGER.error("Hay un error", e);
+
+        }
+        return paciente;
     }
 }

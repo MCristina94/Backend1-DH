@@ -10,6 +10,8 @@ public class SQLQueriesPaciente {
 
     public static final String TRAER_PACIENTES =
             "SELECT * FROM PACIENTES;";
+    public static final String TRAER_PACIENTE =
+            "SELECT * FROM PACIENTES WHERE ID = ?;";
 
     public static final String UPDATE_PACIENTE=
             "UPDATE PACIENTES SET NOMBRE = ?, APELLIDO = ?, DOMICILIO = ?, FECHAALTA = ? WHERE ID = ?;";

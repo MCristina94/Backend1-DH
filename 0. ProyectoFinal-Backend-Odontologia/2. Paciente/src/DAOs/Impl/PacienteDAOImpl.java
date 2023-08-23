@@ -63,13 +63,13 @@ public class PacienteDAOImpl implements PacienteDAO {
     }
 
     @Override
-    public void modificarPaciente(int id, String nuevoNombre, String nuevoApellido, String nuevoDomicilio, Date nuevaFechaAlta) throws Exception {
+    public void modificarPaciente(int id, Paciente paciente) throws Exception {
         try(PreparedStatement statement = connection.prepareStatement(SQLQueriesPaciente.UPDATE_PACIENTE)){
             statement.setInt(5, id);
-            statement.setString(1, nuevoNombre );
-            statement.setString(2, nuevoApellido);
-            statement.setString(3, nuevoDomicilio);
-            statement.setDate(4, nuevaFechaAlta);
+            statement.setString(1, paciente.getNombre());
+            statement.setString(2, paciente.getApellido());
+            statement.setString(3, paciente.getDomicilio());
+            statement.setDate(4, paciente.getFechaAlta());
             statement.executeUpdate();
             LOGGER.info("Se moficaron los datos del paciente con id: " + id);
         }catch (Exception e){
@@ -88,6 +88,30 @@ public class PacienteDAOImpl implements PacienteDAO {
         }catch (Exception e){
             LOGGER.error("Se presentó error al eliminar el paciente", e);
             throw new Exception("Sucedio un error al eliminar");
+        }
+    }
+
+    @Override
+    public Paciente buscarPaciente(int id) throws Exception {
+        try(PreparedStatement statement = connection.prepareStatement(SQLQueriesPaciente.TRAER_PACIENTE)){
+            statement.setInt(1, id);
+            ResultSet resultSet = statement.executeQuery();
+
+            resultSet.last();
+            if(resultSet.getRow()==1){
+                Paciente paciente = new Paciente();
+                paciente.setId(resultSet.getInt(1));
+                paciente.setNombre(resultSet.getString(2));
+                paciente.setApellido(resultSet.getString(3));
+                paciente.setDomicilio(resultSet.getString(4));
+                paciente.setFechaAlta(resultSet.getDate(5));
+
+                return paciente;
+            }else throw new Exception("Error al buscar el paciente");
+        }catch (Exception e){
+            LOGGER.error("No fue posible encontrar el paciente con id: "+id);
+            throw new Exception("sucedio un error al buscar el paciente");
+
         }
     }
 }

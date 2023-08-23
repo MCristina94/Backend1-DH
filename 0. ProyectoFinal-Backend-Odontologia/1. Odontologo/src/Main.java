@@ -24,6 +24,7 @@ public class Main {
         Odontologo odontolo2 = new Odontologo(2, 1254, "Daniel", "Florez");
         Odontologo odontolo3 = new Odontologo(3, 3654, "Cristian", "Lopez");
         Odontologo odontolo4 = new Odontologo(4, 7889, "Luciano", "Menendez");
+        Odontologo odontologoModificar = new Odontologo(5, 1189, "Lucia", "Meneses");
 
         //registrando odontologos en la tabla
         servicioOdontologo.registrarOdontologo(odontolo1);
@@ -34,12 +35,17 @@ public class Main {
         //listando los odontologos ingresados a la tabla
         servicioOdontologo.listarOdontologos();
 
-        //Modificando odontologo
-        servicioOdontologo.modificarOdontologo(1, "Maureen", "Ortiz", 0000);
+        //Modificando odontologo1
+        servicioOdontologo.modificarOdontologo(1, odontologoModificar);
         servicioOdontologo.listarOdontologos();
 
-        //eliminando odontologo
+        //eliminando odontologo2
         servicioOdontologo.eliminarOdontologo(2);
         servicioOdontologo.listarOdontologos();
+
+        //buscar odontologo
+        Odontologo odontologo5= new Odontologo();
+        odontologo5 = servicioOdontologo.buscarOdontologo(1);
+        LOGGER.info("se encontro el odontologo: " + odontologo5);
     }
 }

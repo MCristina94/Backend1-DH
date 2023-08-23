@@ -9,6 +9,10 @@ public class Paciente {
     private String domicilio;
     private Date fechaAlta;
 
+    public Paciente() {
+
+    }
+
     @Override
     public String toString() {
         return "Paciente{" +
