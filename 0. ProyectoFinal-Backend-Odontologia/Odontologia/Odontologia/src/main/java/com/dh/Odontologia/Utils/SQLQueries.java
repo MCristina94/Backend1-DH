@@ -65,4 +65,27 @@ public class SQLQueries {
 
             "DELETE FROM PACIENTES WHERE ID = ?;";
 
+
+    //queries turno
+
+    public static final String CREATETABLES_TURNOS =
+            "DROP TABLE IF EXISTS TURNOS;" +
+                    "CREATE TABLE TURNOS (ID INT PRIMARY KEY, ID_ODONTOLOGO INT, ID_PACIENTE INT,  FECHAHORA_TURNO DATETIME);";
+
+    public static final String INSERT_CUSTOM_TURNOS =
+            "INSERT INTO TURNOS VALUES(?,?,?,?);";
+
+    public static final String TRAER_TURNOS =
+            "SELECT * FROM TURNOS;";
+    public static final String TRAER_TURNO =
+            "SELECT * FROM TURNOS WHERE ID = ?;";
+
+    public static final String UPDATE_TURNO=
+            "UPDATE TURNOS SET ID_ODONTOLOGO = ?, ID_PACIENTE = ?, FECHAHORA_TURNO = ? WHERE ID = ?;";
+
+    public static final String DETELE_CUSTOM_TURNO =
+
+            "DELETE FROM TURNOS WHERE ID = ?;";
+
+
 }

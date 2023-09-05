@@ -3,6 +3,7 @@ package com.dh.Odontologia;
 import com.dh.Odontologia.DAOs.Impl.DomicilioDaoImpl;
 import com.dh.Odontologia.DAOs.Impl.OdontologoDaoImpl;
 import com.dh.Odontologia.DAOs.Impl.PacienteDaoImpl;
+import com.dh.Odontologia.DAOs.Impl.TurnoDaoImpl;
 import org.apache.log4j.Logger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -42,6 +43,17 @@ public class OdontologiaApplication {
 			LOGGER.error("No se pudo crear las tablas", e);
 			return;
 		}
+
+		//creando tabla Turnos
+		TurnoDaoImpl turnoDao = new TurnoDaoImpl();
+
+		try{
+			turnoDao.crearTablas();
+		}catch (Exception e){
+			LOGGER.error("No se pudo crear las tablas", e);
+			return;
+		}
+
 
 		SpringApplication.run(OdontologiaApplication.class, args);
 

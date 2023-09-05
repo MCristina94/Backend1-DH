@@ -13,7 +13,7 @@ import java.util.List;
 @Repository
 public class OdontologoDaoImpl implements IDAO<Odontologo> {
 
-    private static final Logger LOGGER = Logger.getLogger(IDAO.class);
+    private static final Logger LOGGER = Logger.getLogger(OdontologoDaoImpl.class);
 
     private static Connection connection;
 

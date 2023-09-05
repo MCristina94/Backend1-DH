@@ -57,13 +57,14 @@ public class OdontologoController {
 
     //4. buscar odontologo - FUNCIONA
     @GetMapping("/{id}")
-    public Odontologo buscarOdontologo(@PathVariable int id) throws Exception {
+    public ResponseEntity<Odontologo> buscarOdontologo(@PathVariable int id) throws Exception {
         LOGGER.info("se recibe info" + id);
-        return servicioOdontologo.buscar(id);
+        return new ResponseEntity<>(servicioOdontologo.buscar(id), HttpStatus.OK);
     }
     //5. eliminar odontologo - FUNCIONA
     @DeleteMapping("/{id}")
     public void eliminarOdontologo(@PathVariable int id) throws Exception {
+        LOGGER.info("se recibe info" + id);
         servicioOdontologo.eliminar(id);
     }
 

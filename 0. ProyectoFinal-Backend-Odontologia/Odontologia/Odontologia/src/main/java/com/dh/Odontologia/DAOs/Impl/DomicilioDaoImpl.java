@@ -12,7 +12,7 @@ import java.util.List;
 
 @Repository
 public class DomicilioDaoImpl implements IDAO<Domicilio>{
-    private static final Logger LOGGER = Logger.getLogger(IDAO.class);
+    private static final Logger LOGGER = Logger.getLogger(DomicilioDaoImpl.class);
 
     private static Connection connection;
 

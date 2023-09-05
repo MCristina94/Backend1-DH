@@ -38,8 +38,7 @@ public class ServicioDomicilio {
     }
 
     public Domicilio buscar(int id) throws Exception {
-        Domicilio domicilio = null;
-        return domicilio = domicilioIDAO.buscar(id);
+        return domicilioIDAO.buscar(id);
     }
 
 }

@@ -5,9 +5,11 @@ import com.dh.Odontologia.Entidades.Odontologo;
 import com.dh.Odontologia.Entidades.Paciente;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class ServicioPaciente {
     private IDAO<Paciente> pacienteIDAO;
     private Logger LOGGER = Logger.getLogger(ServicioPaciente.class);
@@ -16,6 +18,7 @@ public class ServicioPaciente {
     public ServicioPaciente(IDAO<Paciente> pacienteIDAO) {
         this.pacienteIDAO = pacienteIDAO;
     }
+
     public Paciente guardar(Paciente paciente) throws Exception {
         return pacienteIDAO.guardar(paciente);
     }
@@ -34,7 +37,6 @@ public class ServicioPaciente {
     }
 
     public Paciente buscar(int id) throws Exception {
-       Paciente paciente = null;
-        return paciente = pacienteIDAO.buscar(id);
+       return pacienteIDAO.buscar(id);
     }
 }

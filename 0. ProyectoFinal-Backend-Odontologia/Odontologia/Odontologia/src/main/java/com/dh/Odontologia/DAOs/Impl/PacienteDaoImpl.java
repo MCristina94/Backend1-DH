@@ -2,18 +2,19 @@ package com.dh.Odontologia.DAOs.Impl;
 
 import com.dh.Odontologia.DAOs.IDAO;
 import com.dh.Odontologia.Entidades.Domicilio;
-import com.dh.Odontologia.Entidades.Odontologo;
 import com.dh.Odontologia.Entidades.Paciente;
 import com.dh.Odontologia.Utils.SQLQueries;
 import org.apache.log4j.Logger;
+import org.springframework.stereotype.Repository;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class PacienteDaoImpl implements IDAO<Paciente> {
 
-    private static final Logger LOGGER = Logger.getLogger(IDAO.class);
+    private static final Logger LOGGER = Logger.getLogger(PacienteDaoImpl.class);
 
     private static Connection connection;
     private DomicilioDaoImpl domicilioDao = new DomicilioDaoImpl();
@@ -41,6 +42,9 @@ public class PacienteDaoImpl implements IDAO<Paciente> {
     @Override
     public Paciente guardar(Paciente paciente) throws Exception {
         try(PreparedStatement statement = connection.prepareStatement(SQLQueries.INSERT_CUSTOM_PACIENTES)){
+            Domicilio domicilio = domicilioDao.guardar(paciente.getDomicilio());
+            paciente.getDomicilio().setId(domicilio.getId());
+
             statement.setInt(1, paciente.getId());
             statement.setString(2, paciente.getNombre());
             statement.setString(3, paciente.getApellido());
@@ -68,33 +72,35 @@ public class PacienteDaoImpl implements IDAO<Paciente> {
                 paciente.setId(resultSet.getInt(1));
                 paciente.setNombre(resultSet.getString(2));
                 paciente.setApellido(resultSet.getString(3));
-                //paciente.setDomicilio(resultSet.getInt(4));
                 paciente.setFechaAlta(resultSet.getDate(5));
 
+                int idDomicilio = resultSet.getInt(4);
+                Domicilio domicilio = domicilioDao.buscar(idDomicilio);
+                paciente.setDomicilio(domicilio);
 
                 pacientes.add(paciente);
             }
-
         }catch (Exception e) {
             LOGGER.error("No fue posible listar los pacientes", e);
         }
-
         return pacientes;
     }
 
     @Override
     public Paciente modificar(Paciente paciente) throws Exception {
         try(PreparedStatement statement = connection.prepareStatement(SQLQueries.UPDATE_PACIENTE)){
+
             statement.setInt(5, paciente.getId());
             statement.setString(1, paciente.getNombre());
             statement.setString(2, paciente.getApellido());
-            //statement.setString(3, paciente.getDomicilio());
             statement.setDate(4, paciente.getFechaAlta());
+            statement.setInt(3, paciente.getDomicilio().getId());
+
             statement.executeUpdate();
             LOGGER.info("Se moficaron los datos del paciente");
         }catch (Exception e){
             LOGGER.error("Se presentó error al modificar los datos ", e);
-            throw new Exception("Sucedio un error al modificar");
+            throw new Exception("Sucedio un error al modificar"+ e);
         }
         return paciente;
     }
@@ -124,8 +130,13 @@ public class PacienteDaoImpl implements IDAO<Paciente> {
                 paciente.setId(resultSet.getInt(1));
                 paciente.setNombre(resultSet.getString(2));
                 paciente.setApellido(resultSet.getString(3));
-                //paciente.setDomicilio(resultSet.getString(4));
                 paciente.setFechaAlta(resultSet.getDate(5));
+
+                int idDomicilio = resultSet.getInt(4);
+                Domicilio domicilio = domicilioDao.buscar(idDomicilio);
+                paciente.setDomicilio(domicilio);
+
+
 
                 return paciente;
             }else throw new Exception("Error al buscar el paciente");
